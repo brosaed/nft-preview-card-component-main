@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Colors */
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--Very-dark-blue-main-BG);
+    color: var(--White);
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+.card img {
+    border-radius: 12px;
+
+}
+
+.card img:hover {
+    cursor: pointer;
+}
+
+
+.card {
+    background-color:var(--Very-dark-blue-card-BG) ;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: var(--Soft-blue);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.icon-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+    
+}
+
+
+.icon-text {
+
+    font-size: 16px;
+    font-weight: 400;
+    
+
+}
+
+.ethereum {
+    color: var(--Cyan);
+}
+.clock {
+    color:var(--Soft-blue);
+}
+
+.icon-ethereum {
+    align-items: center;
+
+}
+
+.avatar-area {
+    display: flex;
+    padding: 12px 0;
+    align-items: center;
+    gap: 15px;
+    
+}
+.avatar-area .avatar {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--White);
+    border-radius: 32px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 300;
+}
+h1:hover,h3:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+span {
+    color: var(--Soft-blue);
+}
+
+
+
+.attribution { font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+.middle {
+    width: 20%;
+    transition: .5s ease;
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.text {
+    background-color: var(--Cyan);
+    color: white;
+    font-size: 16px;
+    padding: 111px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.card:hover .middle {
+    opacity: 0.5;
+}
+
+
+.card:hover .middle .text img {
+    opacity: 1;
+}
+  
+@media screen and (max-width:375px) {
+
+    .card {
+        width: 85%;
+    }
+
+    .middle {
+        width: 75%;
+    }
+    .text {
+
+        padding: 115px;
+
+    }
+    
+}
+
+
+@media screen and (min-width:1440px) {
+
+    .card {
+        width: 55%;
+    }
+
+    .middle {
+        width: 48.5%;
+    }
+    .text {
+
+        padding: 120px;
+
+    }
+    
+}
+
+
+
+
